@@ -1,0 +1,2 @@
+# PhotographyManagementSystem
+This application is specially designed for professional photographers. In this application user can add,update,delete events,clients and track the every information related to their job like Job accomplished till now, upcoming events, new notifications request from clients. User can track the monthly business progress and see the upcoming special events like birthday,anniversary of the clients.
