@@ -1,0 +1,44 @@
+body {
+    z-index: -100;
+    background: url('/images/login-bg.jpg') no-repeat scroll center;
+    background-size: 100% 100%;
+}
+
+.hover-nav {
+    display: none;
+}
+
+.hover:hover~.hover-nav {
+    display: block;
+}
+
+.hover-nav:hover {
+    display: block;
+}
+
+footer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.act {
+    border-radius: 100% !important;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.navbar-inverse {
+    color: white;
+    text-align: center;
+}
+
+.graph {
+    height: 100%;
+}
+
+ul>li {
+    list-style: none;
+}

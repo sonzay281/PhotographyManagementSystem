@@ -1,0 +1,119 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 25, 2018, 8:34:10 PM
+    Author     : ZERO BYTE
+*/
+* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+.clearfix { clear: both; }
+body { background-color: #ededed; color: #666666; font-family: serif; }
+img:hover { opacity: 0.5; transform: scale(0.9); }
+.container { width: 100%; margin: auto; }
+.intro-row { height: 820px; width: 100%; margin-top: -9%; }
+.formatter { padding: 60px 30px; }
+.intro-left { width: 50%; height: 100%; float: left; background: url(../images/first-left-bg.jpg) no-repeat scroll center; background-size: 100% 100%; }
+.intro-right { width: 50%; height: 100%; float: right; background-color: #f0e2d7; color: #666666; font-family: Arial, Helvetica, sans-serif; }
+h1.hello { font-weight: normal; }
+#bold { font-weight: bold; color: #000; }
+nav { display: inline-block; width: 100%; margin: 1% 0% 0% 0%; }
+.brand { display: inline-block; width: 20%; font-size: 50px; color: #fff; text-align: right; line-height: 100px; }
+.menu { margin-top: 20px; float: right; display: inline-block; width: 80%; }
+ul.nav-menu li { display: inline-block; padding: 10px; margin: 5px; }
+ul.nav-menu { list-style: none; float: right; }
+ul.nav-menu li a { color: #666666; font-weight: bold; text-decoration: none; }
+.get-started { border: #000 solid; border-radius: 25px; padding: 10px; text-decoration: none; color: #000; font-weight: bold; }
+#home { color: #ffcc66; }
+.intro-paragraph { position: absolute; margin-top: 20%; padding: 3%; }
+.second-row { height: 345px; width: 100%; }
+.second-left { width: 50%; float: left; height: 100%; }
+.second-right { width: 50%; float: right; height: 100%; }
+.second-right-a { float: left; height: 100%; width: 50%; background: url(../../assets/images/second-right-a-bg.jpg) no-repeat scroll center; background-size: 100% 100%; }
+.marginer { margin-top: 20px; }
+.sub-title { color: #ffcc66; }
+.second-right-b { float: left; width: 50%; height: 100%; background-color: #e4ae58; }
+.my-skills { padding: 30px; color: #fff; }
+ul.skills-list { list-style: none; }
+.progress-bar { background-color: #fff; width: 100%; height: 5px; margin: 30px 0px; }
+.skill { margin-top: 10px; height: 100%; }
+.skill-name { float: left; }
+.occupied-text { float: right; }
+.occupied-part { background-color: #000; height: 100%; }
+.skills-list { color: #000; margin-top: 20px; }
+.banner-row { width: 100%; height: 410px; background: url(../images/banner.jpg) no-repeat scroll center; background-size: 100% 100%; text-align: center; color: #fff; padding: 50px; }
+.text { margin: 0px auto; width: 80%; }
+.services-row { height: 345px; width: 100%; }
+.service-1, .service-2, .service-3, .service-4 { width: 25%; height: 100%; float: left; text-align: center; }
+.service-1, .service-2, .service-3 { color: #fff; }
+.service-1 { background-color: #e4ae58; }
+.service-2 { background-color: #e9714c; }
+.service-3 { background-color: #161616; }
+.service-4 { background-color: #ffffff; }
+.fa { margin: 40px; }
+h1.services { margin: 20px 0px; }
+.experience-row, .education-row { width: 100%; height: 385px; color: #fff; }
+.experience-left { width: 50%; height: 100%; float: left; }
+.head-pad { padding: 30px; }
+.experience-right { width: 50%; height: 100%; float: right; background-color: #e9714c; }
+.spans { float: left; }
+.span-right { float: left; margin-top: 40px; }
+.date { color: #675437; }
+.exp-1 { display: inline-block; width: 100%; }
+.exp-2 { display: inline-block; width: 100%; }
+.experience-left { width: 50%; height: 100%; background: url(../../assets/images/third-left-bg.jpg) no-repeat scroll center; background-size: 100% 100%; }
+.education-row { width: 100%; height: 440px; }
+.education-left { width: 50%; height: 100%; background-color: #e4ae58; float: left; }
+.education-right { width: 50%; height: 100%; background: url(../../assets/images/education-bg.jpg) no-repeat scroll center; background-size: 100% 100%; float: right; }
+.contact-row { height: 615px; width: 100%; color: #fff; }
+.contact-row-message { width: 50%; height: 100%; float: left; background-color: #e9714c; padding: 30px; }
+.form-group { margin: 20px 0px; font-weight: normal; }
+.form-group>input, .form-group>textarea { width: 100%; border-style: groove; border-top-style: none; border-left-style: none; border-right-style: none; border-color: #000; height: 50px; background-color: inherit; }
+.send { width: 40%; border: inherit; border-radius: 25px; padding: 10px; text-decoration: none; color: #000; font-weight: bold; }
+.contact-row-banner { width: 20%; height: 100%; float: left; background: url(../../assets/images/contact-background.jpg) no-repeat scroll center; background-size: 100% 100%; }
+.contact { width: 30%; height: 100%; float: right; background-color: #161616; padding: 30px; }
+.contact-panel>ul { list-style: none; padding: -30px; }
+.contact-panel { margin-top: 30px; }
+.contact-panel>ul>li>a { color: #fff; text-decoration: none; }
+footer { height: 380px; width: 100%; }
+.copyright { width: 60%; font-size: 15px; font-weight: bold; color: #000; padding-top: 20px; margin: 0px auto; text-align: center; margin-top: 100px; }
+.social { margin: 30px auto; height: 50%; width: 60%; }
+.social>ul { margin: 0px auto; text-align: center; height: 50%; width: 60%; }
+.social> ul> li { list-style: none; opacity: 0.7; float: left; }
+.service-1:hover, .service-2:hover, .service-3:hover, .service-4:hover { opacity: 0.8; transform: scale(0.9); transition: 0.5s; }
+.get-started:hover, .send:hover { background-color: #e9714c; border: #fff solid; color: #fff; transition: 1s; }
+#tel { font-size: 25px; padding: 1px; }
+#mail { font-size: 25px; padding: 1px; }
+#web { font-size: 25px; padding: 1px; }
+.contact1 { color: #c59b51; }
+.social-1 { font-size: 15px; }
+
+@media only screen and (max-width:480px) {
+	body { background-color: black; width: 100%; }
+	.container { width: 100%; margin: 0px auto; }
+	.intro-row, .second-row, .experience-row, .banner-row, .contact-row, footer { width: 100%; display: block; min-height: 100%; margin: 0px auto; }
+	.intro-left, .second-right-a, .experience-left, .education-right, .contact-row-banner, .banner-row { display: block; width: 100%; height: 50%; }
+	.intro-right, .second-left, .second-right, nav, .menu, .second-right-b, .experience-right, .education-left, .contact-row-message, .contact { width: 100%; display: inline-table; margin: 0px auto; height: 50%; }
+	.spans, .span-right, .date { display: block; text-align: center; width: 100%; margin: 0px auto; }
+	.marginer { margin: 0px auto; }
+	.service-row { position: relative; top: 10%; }
+	.service-1, .service-2, .service-3, .service-4 { width: 100%; display: block; margin: 0px auto; }
+	.intro-paragraph { height: auto; position: relative; margin: 0px auto; padding: auto; width: 100%; }
+	.brand { text-align: center; width: 100%; display: block; }
+	.my-skills { height: 600px; }
+	.menu { height: auto; margin: auto; }
+	.banner-row { width: 100%; height: 100%; margin: 0px auto; background: none; }
+	.text { font-size: 13px; }
+	.experience-row { position: relative; top: 1%; }
+	.copyright { width: 100%; height: 100%; margin-top: 50px; color: #fff; }
+	.formatter { }
+	ul.nav-menu { list-style: none; background-color: #525050; height: auto; width: 100%; text-align: center; margin: auto; }
+	ul.nav-menu li { display: block; padding: 10px; }
+	.clearfix { clear: none; }
+	.head-pad { padding: 25px; }
+	.contact { padding: 5px; }
+	.social { margin: auto; height: 50%; width: 100%; }
+	.social>ul { text-align: center; height: 100%; width: 100%; margin: auto; }
+	.social> ul> li { width: 18%;  margin: 5px auto;}
+}
