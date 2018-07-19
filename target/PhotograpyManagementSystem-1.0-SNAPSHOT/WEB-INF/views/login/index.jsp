@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="header">
                     <p class="white">LOGIN</p>
-                    <img src="/images/icon/login.png" height="50" width="50">
+                    <img src="${pageContext.request.contextPath}/assets/images/icon/login.png" height="50" width="50">
                 </div>
                 <div class="login-panel">
                     <form method="post" action="/admin/">

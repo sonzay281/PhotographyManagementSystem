@@ -7,63 +7,47 @@ package com.lfa.pms.photograpymanagementsystem.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
-import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 /**
  *
  * @author ZERO BYTE
  */
 @Entity
-@Table(name = "tbl_event")
-@NamedQueries({
-    @NamedQuery(name = "Event.findAll", query = "SELECT e FROM Event e")})
+@Table(name = "tbl_events")
+
 public class Event implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
     @Column(name = "id")
     private Long id;
-    @Size(max = 500)
     @Column(name = "description")
     private String description;
-    @Basic(optional = false)
-    @NotNull
     @Column(name = "added_date")
     @Temporal(TemporalType.TIMESTAMP)
     private Date addedDate;
-    @Basic(optional = false)
-    @NotNull
-    @Column(name = "date")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date date;
+    @Column(name = "eventdate")
+    @Temporal(TemporalType.DATE)
+    private Date eventDate;
     @Column(name = "status")
     private Boolean status;
-    @JoinColumn(name = "t_id", referencedColumnName = "id")
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "eventtitle_id", referencedColumnName = "id")
+    @ManyToOne(optional = false)
     private EventTitle eventTitle;
-    @JoinColumn(name = "u_id", referencedColumnName = "id")
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    private User user;
-
-   
+    @JoinColumn(name = "c_id", referencedColumnName = "id")
+    @ManyToOne(optional = false)
+    private Client client;
 
     public Event() {
     }
@@ -72,10 +56,12 @@ public class Event implements Serializable {
         this.id = id;
     }
 
-    public Event(Long id, Date addedDate, Date date) {
+    public Event(Long id, String description, Boolean status, EventTitle eventTitle, Client client) {
         this.id = id;
-        this.addedDate = addedDate;
-        this.date = date;
+        this.description = description;
+        this.status = status;
+        this.eventTitle = eventTitle;
+        this.client = client;
     }
 
     public Long getId() {
@@ -102,12 +88,12 @@ public class Event implements Serializable {
         this.addedDate = addedDate;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getEventDate() {
+        return eventDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setEventDate(Date eventDate) {
+        this.eventDate = eventDate;
     }
 
     public Boolean getStatus() {
@@ -126,12 +112,12 @@ public class Event implements Serializable {
         this.eventTitle = eventTitle;
     }
 
-    public User getUser() {
-        return user;
+    public Client getClient() {
+        return client;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
 }

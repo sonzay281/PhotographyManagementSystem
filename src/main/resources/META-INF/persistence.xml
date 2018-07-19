@@ -5,10 +5,10 @@
     <class>com.lfa.pms.photograpymanagementsystem.entity.EventTitle</class>
     <class>com.lfa.pms.photograpymanagementsystem.entity.Request</class>
     <class>com.lfa.pms.photograpymanagementsystem.entity.Roles</class>
-    <class>com.lfa.pms.photograpymanagementsystem.entity.Contact</class>
     <class>com.lfa.pms.photograpymanagementsystem.entity.User</class>
     <class>com.lfa.pms.photograpymanagementsystem.entity.Event</class>
     <class>com.lfa.pms.photograpymanagementsystem.entity.Login</class>
+    <class>com.lfa.pms.photograpymanagementsystem.entity.Client</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_pms?zeroDateTimeBehavior=convertToNull"/>

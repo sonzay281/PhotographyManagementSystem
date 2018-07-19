@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author ZERO BYTE
  */
 @Repository(value = "EventeRepository")
-public interface EventRepository extends JpaRepository<Event, Long>{
+public interface EventRepository extends JpaRepository<Event, Long> {
     
-}
+     }

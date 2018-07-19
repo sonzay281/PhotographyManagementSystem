@@ -5,7 +5,9 @@
  */
 package com.lfa.pms.photograpymanagementsystem.controllers;
 
+import com.lfa.pms.photograpymanagementsystem.repository.ClientRepository;
 import com.lfa.pms.photograpymanagementsystem.repository.EventRepository;
+import com.lfa.pms.photograpymanagementsystem.repository.RequestRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,11 +25,20 @@ public class AdminController {
 
     @Autowired
     private EventRepository eventRepo;
-    
+    @Autowired
+    private RequestRepository requestRepo;
+    @Autowired
+    private ClientRepository clientRepo;
+
     @RequestMapping(method = RequestMethod.GET)
     public String index(Model model) {
-        model.addAttribute("events", eventRepo.findAll());
-        model.addAttribute("notifications", eventRepo.count());
+       // model.addAttribute("events", eventRepo.findAll());
+        // model.addAttribute("requests", requestRepo.findAll());
+        // model.addAttribute("clients", clientRepo.findAll());
+        model.addAttribute("eventsCount", eventRepo.count());
+        model.addAttribute("requestsCount", requestRepo.count());
+        model.addAttribute("clientsCount", clientRepo.count());
+        // model.addAttribute("pendingCount", eventRepo.pendingCount());
         return "admin/index";
     }
 

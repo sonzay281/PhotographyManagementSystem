@@ -2,13 +2,16 @@ G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lf
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\entity\Roles.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\repository\RolesRepository.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\repository\EventTitleRepository.java
-G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\entity\Contact.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\entity\Login.java
+G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\repository\ClientRepository.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\entity\User.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\entity\Event.java
+G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\controllers\ClientController.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\repository\UserRepository.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\controllers\AdminController.java
+G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\controllers\RequestController.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\entity\Request.java
+G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\entity\Client.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\controllers\HomeController.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\entity\EventTitle.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\repository\LoginRepository.java
@@ -16,4 +19,3 @@ G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lf
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\controllers\EventController.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\repository\EventRepository.java
 G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\repository\RequestRepository.java
-G:\Advanced Java\Programs\github\PhotograpyManagementSystem\src\main\java\com\lfa\pms\photograpymanagementsystem\repository\ContactRepository.java

@@ -1,4 +1,4 @@
- <body>
+<body onload="myDate();">
         <div class="container">
             <div class="raw">
                 <nav class="navbar navbar-inverse">

@@ -6,29 +6,21 @@
 package com.lfa.pms.photograpymanagementsystem.entity;
 
 import java.io.Serializable;
-import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 /**
  *
  * @author ZERO BYTE
  */
 @Entity
-@Table(name = "tbl_login")
-@NamedQueries({
-    @NamedQuery(name = "Login.findAll", query = "SELECT l FROM Login l")})
+@Table(name = "tbl_login",schema = "")
 public class Login implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -41,8 +33,11 @@ public class Login implements Serializable {
     @Column(name = "password")
     private String password;
     @JoinColumn(name = "u_id", referencedColumnName = "id")
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @ManyToOne
     private User user;
+    @JoinColumn(name = "role_id", referencedColumnName = "id")
+    @ManyToOne
+    private Roles roles;
 
     public Login() {
     }
@@ -51,10 +46,12 @@ public class Login implements Serializable {
         this.id = id;
     }
 
-    public Login(Long id, String username, String password) {
+    public Login(Long id, String username, String password, User user, Roles roles) {
         this.id = id;
         this.username = username;
         this.password = password;
+        this.user = user;
+        this.roles = roles;
     }
 
     public Long getId() {
@@ -88,4 +85,13 @@ public class Login implements Serializable {
     public void setUser(User user) {
         this.user = user;
     }
+
+    public Roles getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Roles roles) {
+        this.roles = roles;
+    }
+
 }

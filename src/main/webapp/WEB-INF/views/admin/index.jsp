@@ -2,17 +2,17 @@
 <%@include file="shared/dashboardheader.jsp" %>
 <div class="col-sm-3">
     <div class="caption">
-        <button id="requests" class="btn btn-danger act">10<br>Requests</button>
+        <button id="requests" class="btn btn-danger act">${requestsCount}<br>Requests</button>
     </div>
 </div>
 <div class="col-sm-3">
     <div class="caption">
-        <button id="clients" class="btn btn-primary act">10<br>CLients</button>
+        <button id="clients" class="btn btn-primary act">${clientsCount}<br>Clients</button>
     </div>
 </div>
 <div class="col-sm-3">
     <div class="caption">
-        <button id="events" class="btn btn-success act">10<br>Events</button>
+        <button id="events" class="btn btn-success act">${eventsCount}<br>Events</button>
     </div>
 </div>
 <div class="col-sm-3">
@@ -24,8 +24,8 @@
 <br/>
 <hr/>
 <div class="raw">
-    <div class="col-sm-6 graph">Tadtata</div>
-    <div class="col-sm-6 calander">tadada</div>
+    <div class="col-sm-6 graph">Hello World!</div>
+    <div class="col-sm-6 calander">Hello World!</div>
 </div>
 
 
